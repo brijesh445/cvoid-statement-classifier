@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="module" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/classes" path="src">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/apache-opennlp-1.7.2-bin/apache-opennlp-1.7.2/lib/aopalliance-repackaged-2.5.0-b30.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/apache-opennlp-1.7.2-bin/apache-opennlp-1.7.2/lib/grizzly-framework-2.3.28.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/apache-opennlp-1.7.2-bin/apache-opennlp-1.7.2/lib/grizzly-http-2.3.28.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/apache-opennlp-1.7.2-bin/apache-opennlp-1.7.2/lib/grizzly-http-server-2.3.28.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/apache-opennlp-1.7.2-bin/apache-opennlp-1.7.2/lib/hk2-api-2.5.0-b30.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/apache-opennlp-1.7.2-bin/apache-opennlp-1.7.2/lib/hk2-locator-2.5.0-b30.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/apache-opennlp-1.7.2-bin/apache-opennlp-1.7.2/lib/hk2-utils-2.5.0-b30.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/apache-opennlp-1.7.2-bin/apache-opennlp-1.7.2/lib/hppc-0.7.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/apache-opennlp-1.7.2-bin/apache-opennlp-1.7.2/lib/jackson-annotations-2.8.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/apache-opennlp-1.7.2-bin/apache-opennlp-1.7.2/lib/jackson-core-2.8.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/apache-opennlp-1.7.2-bin/apache-opennlp-1.7.2/lib/jackson-databind-2.8.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/apache-opennlp-1.7.2-bin/apache-opennlp-1.7.2/lib/jackson-jaxrs-base-2.8.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/apache-opennlp-1.7.2-bin/apache-opennlp-1.7.2/lib/jackson-jaxrs-json-provider-2.8.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/apache-opennlp-1.7.2-bin/apache-opennlp-1.7.2/lib/jackson-module-jaxb-annotations-2.8.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/apache-opennlp-1.7.2-bin/apache-opennlp-1.7.2/lib/javassist-3.20.0-GA.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/apache-opennlp-1.7.2-bin/apache-opennlp-1.7.2/lib/javax.annotation-api-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/apache-opennlp-1.7.2-bin/apache-opennlp-1.7.2/lib/javax.inject-2.5.0-b30.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/apache-opennlp-1.7.2-bin/apache-opennlp-1.7.2/lib/javax.ws.rs-api-2.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/apache-opennlp-1.7.2-bin/apache-opennlp-1.7.2/lib/jcommander-1.48.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/apache-opennlp-1.7.2-bin/apache-opennlp-1.7.2/lib/jersey-client-2.25.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/apache-opennlp-1.7.2-bin/apache-opennlp-1.7.2/lib/jersey-common-2.25.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/apache-opennlp-1.7.2-bin/apache-opennlp-1.7.2/lib/jersey-container-grizzly2-http-2.25.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/apache-opennlp-1.7.2-bin/apache-opennlp-1.7.2/lib/jersey-entity-filtering-2.25.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/apache-opennlp-1.7.2-bin/apache-opennlp-1.7.2/lib/jersey-guava-2.25.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/apache-opennlp-1.7.2-bin/apache-opennlp-1.7.2/lib/jersey-media-jaxb-2.25.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/apache-opennlp-1.7.2-bin/apache-opennlp-1.7.2/lib/jersey-media-json-jackson-2.25.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/apache-opennlp-1.7.2-bin/apache-opennlp-1.7.2/lib/jersey-server-2.25.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/apache-opennlp-1.7.2-bin/apache-opennlp-1.7.2/lib/morfologik-fsa-2.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/apache-opennlp-1.7.2-bin/apache-opennlp-1.7.2/lib/morfologik-fsa-builders-2.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/apache-opennlp-1.7.2-bin/apache-opennlp-1.7.2/lib/morfologik-stemming-2.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/apache-opennlp-1.7.2-bin/apache-opennlp-1.7.2/lib/morfologik-tools-2.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/apache-opennlp-1.7.2-bin/apache-opennlp-1.7.2/lib/opennlp-brat-annotator-1.7.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/apache-opennlp-1.7.2-bin/apache-opennlp-1.7.2/lib/opennlp-morfologik-addon-1.7.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/apache-opennlp-1.7.2-bin/apache-opennlp-1.7.2/lib/opennlp-tools-1.7.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/apache-opennlp-1.7.2-bin/apache-opennlp-1.7.2/lib/opennlp-uima-1.7.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/apache-opennlp-1.7.2-bin/apache-opennlp-1.7.2/lib/osgi-resource-locator-1.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HP/Downloads/apache-opennlp-1.7.2-bin/apache-opennlp-1.7.2/lib/validation-api-1.1.0.Final.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>
