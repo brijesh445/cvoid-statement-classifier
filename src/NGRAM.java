@@ -23,20 +23,26 @@ public class NGRAM {
  
     public static void main(String[] args) {
  
+    	final String  ModelName="en-covid-classifier-ngram.bin";
+    	final String  TrainFileName="motheroftraindataP90.train";
+    	
         try {
             // read the training data
-            InputStreamFactory dataIn = new MarkableFileInputStreamFactory(new File("train"+File.separator+"covid-train-v1.train"));
+            InputStreamFactory dataIn = new MarkableFileInputStreamFactory(new File("train"+File.separator+TrainFileName));
             ObjectStream lineStream = new PlainTextByLineStream(dataIn, "UTF-8");
             ObjectStream sampleStream = new DocumentSampleStream(lineStream);
  
             // define the training parameters
             TrainingParameters params = new TrainingParameters();
-            params.put(TrainingParameters.ITERATIONS_PARAM, 10+"");
+            params.put(TrainingParameters.ITERATIONS_PARAM, 20+"");
             params.put(TrainingParameters.CUTOFF_PARAM, 0+"");
              
             // feature generators - N-gram feature generators
-            FeatureGenerator[] featureGenerators = { new NGramFeatureGenerator(1,1),
-                    new NGramFeatureGenerator(2,3) };
+            FeatureGenerator[] featureGenerators = { new NGramFeatureGenerator(2,3),
+                    new NGramFeatureGenerator(4,5) };
+            
+            System.out.println(featureGenerators);
+            
             DoccatFactory factory = new DoccatFactory(featureGenerators);
  
             // create a model from traning data
@@ -44,9 +50,9 @@ public class NGRAM {
             System.out.println("\nModel is successfully trained.");
  
             // save the model to local
-            BufferedOutputStream modelOut = new BufferedOutputStream(new FileOutputStream("model"+File.separator+"en-cvoid-classifier-ngram.bin"));
+            BufferedOutputStream modelOut = new BufferedOutputStream(new FileOutputStream("model"+File.separator+ModelName));
             model.serialize(modelOut);
-            System.out.println("\nTrained Model is saved locally at : "+"model"+File.separator+"en-movie-classifier-ngram.bin");
+            System.out.println("\nTrained Model is saved locally at : "+"model"+File.separator+ModelName);
  
             // test the model file by subjecting it to prediction
             DocumentCategorizer doccat = new DocumentCategorizerME(model);

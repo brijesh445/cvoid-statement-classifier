@@ -19,26 +19,28 @@ import opennlp.tools.util.TrainingParameters;
 public class MAXNET {
  
     public static void main(String[] args) {
- 
+    		
+    	final String  ModelName="en-covid-classifier-maxent.bin";
+    	final String  TrainFileName="motheroftraindataP90.train";
         try {
             // read the training data
-            InputStreamFactory dataIn = new MarkableFileInputStreamFactory(new File("train"+File.separator+"covid-train-v1.train"));
+            InputStreamFactory dataIn = new MarkableFileInputStreamFactory(new File("train"+File.separator+TrainFileName));
             ObjectStream lineStream = new PlainTextByLineStream(dataIn, "UTF-8");
             ObjectStream sampleStream = new DocumentSampleStream(lineStream);
  
             // define the training parameters
             TrainingParameters params = new TrainingParameters();
-            params.put(TrainingParameters.ITERATIONS_PARAM, 10+"");
+            params.put(TrainingParameters.ITERATIONS_PARAM, 20+"");
             params.put(TrainingParameters.CUTOFF_PARAM, 0+"");
  
-            // create a model from traning data
+            // create a model from training data
             DoccatModel model = DocumentCategorizerME.train("en", sampleStream, params, new DoccatFactory());
             System.out.println("\nModel is successfully trained.");
  
             // save the model to local
-            BufferedOutputStream modelOut = new BufferedOutputStream(new FileOutputStream("model"+File.separator+"en-covid-classifier-maxent.bin"));
+            BufferedOutputStream modelOut = new BufferedOutputStream(new FileOutputStream("model"+File.separator+ModelName));
             model.serialize(modelOut);
-            System.out.println("\nTrained Model is saved locally at : "+"model"+File.separator+"en-covid-classifier-maxent.bin");
+            System.out.println("\nTrained Model is saved locally at : "+"model"+File.separator+ModelName);
  
             // test the model file by subjecting it to prediction
             DocumentCategorizer doccat = new DocumentCategorizerME(model);
